@@ -5,6 +5,7 @@
 # Pre-built boxes
 You can find pre-built boxes at [Hashicorp website ](https://atlas.hashicorp.com/alvassin/boxes/homestead-parallels/versions/1.0.0). To use vagrant pre-built box, run: 
 ```sh
-vagrant init alvassin/homestead-parallels; vagrant up --provider parallels
+vagrant init alvassin/homestead-parallels; 
+vagrant up --provider parallels
 ```
 
