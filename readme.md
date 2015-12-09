@@ -9,3 +9,25 @@ vagrant init alvassin/homestead-parallels;
 vagrant up --provider parallels
 ```
 
+# Installation
+
+Install homestead globally
+```
+composer global require "laravel/homestead=~2.0"
+```
+
+Init homestead (creates ~/.homestead folder) 
+```
+homestead init
+```
+
+Update ~/.homestead/Homestead.yaml to following values:
+```
+box: alvassin/homestead-parallels
+provider: parallels
+```
+
+Run homestead
+```
+homestead up
+```
