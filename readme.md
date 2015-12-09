@@ -1,33 +1,36 @@
-# Laravel Parallels Desktop Settler
+[Parallels Desktop](https://www.parallels.com/products/desktop/) support for [Laravel Homestead](http://laravel.com/docs/5.1/homestead) development environment.
 
-[Laravel Homestead](http://laravel.com/docs/5.1/homestead) does not have official support for [Parallels](https://www.parallels.com/products/desktop/) Vagrant provider, that is much faster then VirtualBox. You can build development environment for Parallels yourself using this repo.
+## Install
+The way i install Homestead on my mac (i consider you have composer & php installed).
 
-### Pre-built boxes
-You can find pre-built boxes at [Hashicorp website ](https://atlas.hashicorp.com/alvassin/boxes/homestead-parallels/versions/1.0.0). To use vagrant pre-built box, run: 
-```sh
-vagrant init alvassin/homestead-parallels; 
-vagrant up --provider parallels
-```
-
-# Installation
-
-Install homestead globally
-```
+Install & init homestead:
+```bash
+# Install homestead globally
 composer global require "laravel/homestead=~2.0"
-```
 
-Init homestead (creates ~/.homestead folder) 
-```
+# Init homestead (creates ~/.homestead folder) 
 homestead init
 ```
 
-Update ~/.homestead/Homestead.yaml to following values:
+Update following values in `~/.homestead/Homestead.yaml`:
 ```
 box: alvassin/homestead-parallels
 provider: parallels
 ```
 
-Run homestead
+Run homestead using `homestead up`. Enjoy.
+
+## Pre-built boxes
+You can find pre-built boxes at [Hashicorp website ](https://atlas.hashicorp.com/alvassin/boxes/homestead-parallels/versions/1.0.0). To use pre-built box, run: 
+```bash
+vagrant init alvassin/homestead-parallels; 
+vagrant up --provider parallels
 ```
-homestead up
+
+## Build
+If you want to build Homestead Vagrant box yourself, perform following commands:
+```bash
+git clone git@github.com:alvassin/homestead-parallels-settler.git
+cd homestead-parallels-settler
+bash build.sh
 ```
