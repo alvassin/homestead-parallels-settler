@@ -27,7 +27,7 @@ vagrant init alvassin/homestead-parallels;
 vagrant up --provider parallels
 ```
 
-## Build
+## Build from source
 If you want to build Homestead Vagrant box yourself, perform following commands:
 ```bash
 git clone git@github.com:alvassin/homestead-parallels-settler.git
