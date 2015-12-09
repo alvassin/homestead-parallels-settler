@@ -1,4 +1,4 @@
-[Parallels Desktop](https://www.parallels.com/products/desktop/) support for [Laravel Homestead](http://laravel.com/docs/5.1/homestead) development environment.
+Provides [Parallels Desktop](https://www.parallels.com/products/desktop/) support for [Laravel Homestead](http://laravel.com/docs/5.1/homestead) development environment.
 
 ## Install
 The way i install Homestead on my mac (i consider you have composer & php installed).
