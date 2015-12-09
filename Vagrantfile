@@ -10,7 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.insert_key = false
 
   config.vm.provider :parallels do |v|
-    v.cpus = 2
+    v.cpus = 1
     v.memory = 2048
     v.update_guest_tools = true
   end
